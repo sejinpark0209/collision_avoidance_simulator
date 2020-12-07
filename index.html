@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type='text/css'>
+    #title {
+      color: black
+    }
+
+    table, tr, th {
+      border: 1px solid black;
+    }
+
+    tr, th {
+      padding: 1px;
+    }
+
+  </style>
+</head>
+<body>
+<div>
+  <h1 id="title">Aircraft Collision Avoidance Visualizer</h1>
+    <table id="table">
+      <script language="javascript" type="text/javascript">
+        for (var i = 0; i < 10; i++) {
+          document.write("<tr>");
+          for(var j = 0; j < 10; j++) {
+            document.write("<th height=50 width=50 id='" + i + "+" + j +  "'></th>", );
+          }
+        }
+    </script>
+  </table>
+</div>
+<script src="./collision_simulator.js"></script>
+</body>
+</html>
